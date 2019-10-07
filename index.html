@@ -6,7 +6,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png"/>
     <title>151Cuba</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+          if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+      });
+    });
+    </script>
 </head>
   <body>
     <div class = 'background'>
@@ -15,15 +31,15 @@
           <a href = "index.html"><img src = 'images/logo.png' /></a>
         </div>
         <div class = 'links'>
-          <a href = "about.html">about</a>
-          <a href = "video.html">video</a>
+          <a href = "#overview-background">about</a>
+          <a href = "#v-background">video</a>
           <a href = "perAnnum.html">"perAnnum"</a>
         </div>
       </nav>
       <div class = "home">
       </div>
       <div class = "home-button">
-        <a href = '#v-background'>Find Out More</a>
+        <a href = '#overview-background'>Find Out More</a>
       </div>
     </div>
     <div id = 'overview-background'>
@@ -31,7 +47,7 @@
         <div class = "a-frame">
           <div class = "a-info">
             <div class = "a-header">
-              <h3>WHAT IS 151CUBA?</h3>
+                <h3>WHAT IS 151Cuba?</h3>
             </div>
             <p> 151Cuba is a Public Intervention which showcases your "private" data to the public of Wellington. 151Cuba works through the connection between a Modem and a Data Projector. When a user connects to the unprotected Modem, the data collected from one's connectivity is sent to the projector which visually displays the information and makes it visible to foot traffic walking past the site. <br></br>The project aims to make the public more aware of Private Data sharing and the issues around 'shady' Terms and Conditions which enable Corporate Identities to breach privacy on a daily basis. </p>
           </div>
@@ -54,11 +70,31 @@
             </video>
           </div>
           <div class = "info">
-            <h3>SITE<br>CONTEXT</h3>
+            <h3>SITE PROJECT<br>VIDEO</h3>
             <p> As mentioned earlier, 151Cuba works and relies on the user’s curiosity with seeing an open Wi-Fi network. Once they connect to the network on their device, the data collected from the device will be sent and displayed through a Data Projector which is connected wirelessly to the same modem.
             <br></br>The data projector itself is displayed on a large wall which allows the rest of the public to see what you’re doing on your device without you actually knowing. </p>
           </div>
         </div>
+      </div>
+    </div>
+    <div id = 'problem-background'>
+      <div class = "problem">
+        <img src = "images/page15.jpg" />
+      </div>
+    </div>
+    <div id = 'problem-background'>
+      <div class = "problem">
+        <img src = "images/page14.jpg" />
+      </div>
+    </div>
+    <div id = 'problem-background'>
+      <div class = "problem">
+        <img src = "images/page12.jpg" />
+      </div>
+    </div>
+    <div id = 'problem-background'>
+      <div class = "problem">
+        <img src = "images/page16.jpg" />
       </div>
     </div>
   </body>
