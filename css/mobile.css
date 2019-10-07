@@ -1,0 +1,35 @@
+/* * Phone Width */ 
+@media screen & (max-width: 375px){
+  .v-background{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+  }
+
+  .graph-block{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .graph-block2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1{
+    height: 25%;
+    width: 80%;
+  }
+
+  .section2{
+    height: 25%;
+    width: 80%;
+  }
+
+  .half1{
+    height: 50%;
+    width: 80%;
+  }
+}
