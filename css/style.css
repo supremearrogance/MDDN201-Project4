@@ -438,6 +438,8 @@ video{
     height: 100%;
   }
 
+
+
   .d-background{
     display: flex;
     height: 125%;
@@ -541,7 +543,7 @@ video{
     width: 80%;
   }
 
-  .pa-logo img{
+  .pa-logo{
     display: none;
   }
 
