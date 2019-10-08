@@ -303,8 +303,8 @@ video{
 }
 
 .pa-logo img{
-  width: 3.5%;
-  height: auto;
+  max-width: 3.5%;
+  max-height: 3.5%;
   margin-top: 1.5%;
 }
 
@@ -371,11 +371,16 @@ video{
     height: 125%;
   }
 
+  .title-block{
+    display: flex;
+    align-items: center;
+    height: 700px;
+  }
+
   .graph-block{
     display: flex;
     align-items: center;
     height: 25%;
-
   }
 
   .graph-block2{
@@ -405,6 +410,10 @@ video{
   .half1{
     height: 25%;
     width: 80%;
+  }
+
+  .pa-logo img{
+    object-fit: cover;
   }
 
 }
