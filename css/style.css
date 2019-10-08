@@ -376,7 +376,7 @@ video{
   .title-block{
     display: flex;
     align-items: center;
-    height: 700px;
+    height: 650px;
   }
 
   .graph-block{
