@@ -291,8 +291,8 @@ video{
 
 .pa-logo{
   width: 100%;
-  height: auto;
-  position:fixed;
+  height: 10%;
+  position: fixed;
   display: flex;
   justify-content: center;
   /* display: flex;
@@ -415,9 +415,9 @@ video{
   }
 
   .pa-logo img{
-    /* margin-top: 5%; */
-    width: 20%;
-    height: 20%;
+    margin-top: 5%;
+    width: 40%;
+    height: 25%;
     /* object-fit: cover; */
   }
 
