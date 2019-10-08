@@ -2,14 +2,14 @@ body{
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: #262626;
+  background-color: #42433e;
 }
 
 .background{
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 10%;
   width: 100%;
-  background-image: url('images/page.jpg');
-  background-size: cover;
 }
 
 nav{
@@ -83,7 +83,12 @@ nav{
 }
 
 .home{
-  height: 62.5%;
+  height: 100%;
+}
+
+.home img{
+  width: 100%;
+  height: auto;
 }
 
 /* about page */
@@ -141,7 +146,7 @@ nav{
 #overview-background{
   height: 100vh;
   width: 100%;
-  background-color: #42433e;
+  background-image: linear-gradient(to bottom, #42433e, #262626);
 }
 
 #overview-background img{
@@ -240,6 +245,7 @@ video{
 #problem-background{
   height: 100vh;
   width: 100%;
+  background-image: linear-gradient(to bottom, #262626, #42433e);
 }
 
 #problem-background a{
@@ -256,7 +262,7 @@ video{
 #v-background{
   height: 100vh;
   width: 100%;
-  background-color: #42433e;
+  background-image: linear-gradient(to bottom, #42433e, #262626);
 }
 
 
@@ -304,8 +310,22 @@ video{
   justify-content: center;
 }
 
+.p-background{
+  height: 630vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #42433e, #262626);
+}
+
+.p-background a{
+  display: flex;
+  justify-content: center;
+}
+
 .pa-logo img{
-  max-width: 3.5%;
+  width: 3.5%;
   height: auto;
   margin-top: 1.5%;
 }
@@ -334,6 +354,14 @@ video{
   width: 100%;
 }
 
+.graph-block4{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 50%;
+  width: 100%;
+}
+
 .title-block{
   display: flex;
   justify-content: center;
@@ -342,7 +370,49 @@ video{
   width: 100%;
 }
 
+.process-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.document-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+
+.process-block img{
+  height: auto;
+  width: 100%;
+}
+
+.document-block img{
+  height: auto;
+  width: 100%;
+}
+
 .half1{
+  height: auto;
+  width: 45%;
+}
+
+.half2{
+  height: auto;
+  width: 45%;
+}
+
+.half3{
+  height: auto;
+  width: 45%;
+}
+
+.half4{
   height: auto;
   width: 45%;
 }
@@ -371,6 +441,7 @@ video{
   .d-background{
     display: flex;
     height: 125%;
+
   }
 
   .title-block{
@@ -381,8 +452,10 @@ video{
 
   .graph-block{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    height: 25%;
+    justify-content: flex-start;
+    height: 50%;
   }
 
   .graph-block2{
@@ -393,20 +466,58 @@ video{
 
   .graph-block3{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column-reverse;
     height: 50%;
     margin-top: 10%;
   }
 
+  .graph-block4{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 10%;
+  }
+
+
   .section1{
-    height: 25%;
-    width: 80%;
+    /* height: 100%;
+    width: 80%; */
+    display:none;
   }
 
   .section2{
+    height: 100%;
+    width: 80%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    /* order: -1; */
+  }
+
+  .graph-block3 .half1{
     height: 25%;
     width: 80%;
-    /* order: -1; */
+    border-bottom: 1px solid white;
+  }
+
+  .graph-block3 .half2{
+    height: 25%;
+    width: 80%;
+    border-top: 1px solid white;
+  }
+
+  .graph-block3 .half4{
+    height: 25%;
+    width: 80%;
+    border-top: 1px solid white;
+  }
+
+  .graph-block4 .half1{
+    height: 25%;
+    width: 80%;
   }
 
   .half1{
@@ -414,11 +525,24 @@ video{
     width: 80%;
   }
 
+
+  .half2{
+    height: 25%;
+    width: 80%;
+  }
+
+  .half3{
+    height: 25%;
+    width: 80%;
+  }
+
+  .half4{
+    height: 25%;
+    width: 80%;
+  }
+
   .pa-logo img{
-    margin-top: 5%;
-    width: 40%;
-    height: 45%;
-    /* object-fit: cover; */
+    display: none;
   }
 
 }
