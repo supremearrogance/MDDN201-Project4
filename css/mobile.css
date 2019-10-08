@@ -1,5 +1,5 @@
-/* * Phone Width */ 
-@media screen & (max-width: 375px){
+/* * Phone Width */
+/* @media screen & (max-width: 375px){
   .v-background{
     display: flex;
     flex-direction: column;
@@ -32,4 +32,4 @@
     height: 50%;
     width: 80%;
   }
-}
+} */
