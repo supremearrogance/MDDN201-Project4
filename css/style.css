@@ -449,7 +449,7 @@ video{
   .title-block{
     display: flex;
     align-items: center;
-    height: 650px;
+    height: 825px;
   }
 
   .graph-block{
