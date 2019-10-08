@@ -324,6 +324,14 @@ video{
   width: 100%;
 }
 
+.graph-block3{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 50%;
+  width: 100%;
+}
+
 .title-block{
   display: flex;
   justify-content: center;
@@ -350,4 +358,53 @@ video{
 .title-image{
   height: auto;
   width: 100%;
+}
+
+@media (max-width: 750px){
+  .v-background{
+    display: flex;
+    height: 100%;
+  }
+
+  .d-background{
+    display: flex;
+    height: 125%;
+  }
+
+  .graph-block{
+    display: flex;
+    align-items: center;
+    height: 25%;
+
+  }
+
+  .graph-block2{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+
+  .graph-block3{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin-top: 10%;
+  }
+
+  .section1{
+    height: 25%;
+    width: 80%;
+  }
+
+  .section2{
+    height: 25%;
+    width: 80%;
+    /* order: -1; */
+  }
+
+  .half1{
+    height: 25%;
+    width: 80%;
+  }
+
 }
